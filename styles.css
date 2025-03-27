@@ -1,0 +1,141 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(244, 229, 202);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 600px; /* Made it shorter but still balanced */
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(20px);
+    text-align: center;
+}
+
+
+
+/* Headings */
+h1 {
+    color: rgb(66, 59, 44);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Map Container */
+.map-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+}
+
+
+
+#map {
+    height: 350px; /* Adjusted height to match shorter width */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.85);
+
+}
+
+
+
+/* Button Styling */
+button {
+    padding: 14px 20px;
+    border: none;
+    background-color: rgb(253, 177, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(234, 194, 120);
+    box-shadow: 0 6px 18px rgba(202, 193, 194, 0.5);
+}
+
+
+
+/* List */
+ul {
+    border: 1px solid ;
+    list-style: none;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 12px;
+}
+
+ul li {
+    text-transform: uppercase;
+    background: rgb(206, 197, 180);
+    color: rgb(255, 255, 255);
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: left;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+ul li:hover {
+    background: rgb(138, 134, 128);
+    color: rgb(255, 255, 255);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        max-width: 100%;
+    }
+    .controls {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+    }
+}
